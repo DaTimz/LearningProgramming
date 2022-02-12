@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstProject.Demo;
+using System;
 
 namespace FirstProject
 {
@@ -8,7 +9,13 @@ namespace FirstProject
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello to you too.");
-            Console.WriteLine("Don't talk to me");
+            //Program program = new Program();
+            FirstClass.AddResponse(); // static
+            FirstClass fs = new FirstClass();
+            fs.SaySomething(); // instance
+
+            DemoOfUsing demo = new DemoOfUsing();
+            demo.SaySomething();
         }
     }
 }
